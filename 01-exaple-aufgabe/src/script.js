@@ -3,6 +3,7 @@ const app = Vue.createApp({
     return {
       personName: "John Doe",
       currentDate: new Date().toLocaleString("en-US"),
+      vtextExampleText: "Hello John!",
     };
   },
   directives: {
