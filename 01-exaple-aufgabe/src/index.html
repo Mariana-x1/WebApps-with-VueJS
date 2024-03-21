@@ -32,6 +32,9 @@
                 <!-- durch v-on:click.prevent lässt sich nicht geklickt werden!-->
                 <p><span v-highlight> {{personName}} </span></p>
                 <p v-text="vtextExampleText"> Das ist ein anderer Text</p>
+                <p v-text="'<h1>Tolle Headline</h1>'"> Das ist ein anderer Text</p>
+                <p v-html="'<h1>Tolle Headline</h1><p>Some Text</p>'"> Das ist ein anderer Text</p>
+
             </div>
         </div>
         <script src="https://unpkg.com/vue@latest"></script>
