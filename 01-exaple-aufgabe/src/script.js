@@ -4,6 +4,7 @@ const app = Vue.createApp({
       personName: "John Doe",
       currentDate: new Date().toLocaleString("en-US"),
       vtextExampleText: "Hello John!",
+      vhtmlExampleText: "<h1>Tolle Headline</h1><p>Some Text</p>",
     };
   },
   directives: {
