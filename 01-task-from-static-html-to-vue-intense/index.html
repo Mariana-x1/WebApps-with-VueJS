@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Template Interpolation</title>
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <div id="app">
+        <p>Name: {{ personName }}</p>
+        <p>Aktuelles Datum und Uhrzeit: {{ currentDate }}</p>
+    </div>
+
+    <script src="https://unpkg.com/vue@latest"></script>
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    personName: 'John Doe',
+                    currentDate: new Date().toLocaleString('en-US'),
+                };
+            },
+        }).mount('#app');
+        console.log(app.personName)
+    </script>
+</body>
+
+</html>
