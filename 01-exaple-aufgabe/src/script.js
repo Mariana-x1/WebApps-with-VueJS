@@ -5,5 +5,13 @@ const app = Vue.createApp({
       currentDate: new Date().toLocaleString("en-US"),
     };
   },
+  directives: {
+    highlight: {
+      mounted(el) {
+        el.style.border = "1px solid red";
+        el.style.backgroundColor = "hotpink";
+      },
+    },
+  },
 }).mount("#app");
 console.log(app.personName);
