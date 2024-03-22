@@ -21,7 +21,7 @@
     </header>
     <main>
         <div id="app" class="inside">
-            <h1 :id="headlineId">{{ headline }}</h1>
+            <h1 :id="headline.replace(/\s/g, '-').toUpperCase()">{{ headline }}</h1> <!--deleted "headlineId"-->
             <p>
                 Directives are special attributes with the <code>v-</code> prefix.
                 Directive attribute values are expected to be

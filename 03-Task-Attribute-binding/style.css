@@ -50,9 +50,10 @@ h4 {
   margin-bottom: 15px;
 }
 
-#headline-id {
-  color: rgb(80, 8, 28);
-}
+/* #headlineId {
+  color: red;
+  font-size: 24px;
+} */
 
 main p {
   line-height: 1.5;
