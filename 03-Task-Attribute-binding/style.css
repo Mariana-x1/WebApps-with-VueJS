@@ -38,10 +38,6 @@ h2 {
   padding: 0px 20px;
 }
 
-#headline-id {
-  color: rgb(97, 7, 43);
-}
-
 .inside {
   margin: 10px;
 }
@@ -52,6 +48,10 @@ h3,
 h4 {
   color: #6a1cc3;
   margin-bottom: 15px;
+}
+
+#headline-id {
+  color: rgb(80, 8, 28);
 }
 
 main p {
