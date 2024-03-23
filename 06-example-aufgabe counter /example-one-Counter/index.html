@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Counter App</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app" v-bind:style="{ '--bg-color': bgColor }">
+        <div class="content">
+            <h1>Counter App</h1>
+            <p>Count: {{ count }}</p>
+        </div>
+        <button v-on:click="increment">increment</button>
+        <button v-on:click="reset">Reset</button>
+    </div>
+
+    <script src="https://unpkg.com/vue@latest"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
