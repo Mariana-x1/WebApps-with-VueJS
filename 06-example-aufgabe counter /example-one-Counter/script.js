@@ -11,11 +11,11 @@ const app = Vue.createApp({
         this.count++;
       }
       // Change background color based on count value
-      if (this.count <= 25) {
+      if (this.count >= 25) {
         this.bgColor = "green";
-      } else if (this.count <= 50) {
+      } else if (this.count >= 50) {
         this.bgColor = "yellow";
-      } else if (this.count <= 75) {
+      } else if (this.count >= 75) {
         this.bgColor = "orange";
       } else {
         this.bgColor = "red";
