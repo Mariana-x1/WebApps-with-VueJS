@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Click Highlight</title>
+    <!-- Include Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <style>
+        .btn-active {
+            background-color: #ffcc00;
+        }
+
+        .letter-active {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <button v-for="letter in letters" :key="letter" @click="setActive(letter)"
+            :class="{ 'btn-active': activeLetter === letter }">{{ letter }}</button>
+        <div v-for="letter in letters" :key="'block-'+letter" class="letter-block"
+            :class="{ 'letter-active': activeLetter === letter }">{{ letter }}</div>
+    </div>
+    <script src="https://unpkg.com/vue@latest"></script>
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    letters: ['A', 'B', 'C', 'D', 'E'],
+                    activeLetter: null
+                };
+            },
+            methods: {
+                setActive(letter) {
+                    this.activeLetter = letter;
+                }
+            }
+        }).mount('#app');
+    </script>
+
+</body>
+
+</html>
