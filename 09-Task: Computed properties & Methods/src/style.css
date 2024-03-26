@@ -83,11 +83,6 @@ th {
   color: white;
 }
 
-.strike {
-  text-decoration: line-through;
-  font-size: 0.75rem;
-}
-
 @media only screen and (min-width: 1140px) {
   .header {
     font-size: 1.5rem;

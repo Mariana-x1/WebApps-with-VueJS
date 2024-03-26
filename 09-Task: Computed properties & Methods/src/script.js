@@ -547,4 +547,36 @@ Vue.createApp({
       ],
     };
   },
+  computed: {
+    tableColumnHeadNames() {
+      const validKeys = [
+        "title",
+        "isbn",
+        "author",
+        "publisher",
+        "price",
+        "numPages",
+      ];
+      const oneBookItem = this.books[0];
+
+      const columnResult = Object.keys(oneBookItem).filter((oneKey) => {
+        return validKeys.includes(oneKey);
+      });
+
+      return columnResult;
+    },
+    reileyMediaBooks() {
+      return this.books.filter((book) => {
+        return book.publisher === "O'Reilly Media";
+      });
+    },
+  },
+  methods: {
+    calculateDiscount(dollar, discount) {
+      const [, priceOnly] = dollar.split("$");
+      const discountValue = (priceOnly / 100) * discount;
+
+      return "$" + (priceOnly - discountValue).toFixed(2);
+    },
+  },
 }).mount("#app");
