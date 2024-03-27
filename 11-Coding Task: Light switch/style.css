@@ -13,7 +13,7 @@ html {
 .is-active {
   background-color: yellow;
 }
-.buttonToggleswitsch {
+.buttonToggleSwitch {
   padding: 1rem;
   border: 0.3rem solid rgb(19, 10, 139);
   border-radius: 2rem;
@@ -22,4 +22,21 @@ html {
   font-weight: bold;
   color: blue;
   background-color: rgb(236, 239, 245);
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.buttonToggleSwitch:hover {
+  background-color: rgb(200, 200, 200);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.buttonToggleSwitch:active {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+.buttonToggleSwitch:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 0, 255, 0.5);
 }
