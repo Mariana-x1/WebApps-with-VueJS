@@ -6,9 +6,20 @@ html {
   justify-content: center;
   align-items: center;
 }
+
 #app {
   text-align: center;
 }
 .is-active {
   background-color: yellow;
+}
+.buttonToggleswitsch {
+  padding: 1rem;
+  border: 0.3rem solid rgb(19, 10, 139);
+  border-radius: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  font-weight: bold;
+  color: blue;
+  background-color: rgb(236, 239, 245);
 }
