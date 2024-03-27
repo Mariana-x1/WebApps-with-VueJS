@@ -1,0 +1,14 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#app {
+  text-align: center;
+}
+.is-active {
+  background-color: yellow;
+}
